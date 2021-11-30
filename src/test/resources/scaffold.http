@@ -1,0 +1,56 @@
+POST http://localhost:8090/listRemote
+Content-Type: application/json
+Accept: application/json
+
+{
+  "url": "https://gitee.com/yidao620/springboot-bucket.git"
+}
+
+###
+GET http://localhost:8090/gitRepository
+Content-Type: application/json
+
+###
+POST http://localhost:8090/gitRepository
+Content-Type: application/json
+
+{
+  "url": "https://gitee.com/yidao620/springboot-bucket.git",
+  "name": "springboot-bucket",
+  "aliasName": "Spring Boot 扩展"
+}
+###
+GET http://localhost:8090/gitRepository/1
+Content-Type: application/json
+###
+POST http://localhost:8090/gitRepository/1/clone
+Content-Type: application/json
+###
+POST http://localhost:8090/gitRepository/1/checkout/sprintboot1.5
+Content-Type: application/json
+
+###
+POST http://localhost:8090/gitRepository/1/listRemote
+Content-Type: application/json
+###
+###
+POST http://localhost:8090/gitRepository/1/checkout
+Content-Type: application/json
+
+{
+  "branch": "sprintboot1.5"
+}
+###
+POST http://localhost:8090/gitRepository/1/checkout
+Content-Type: application/json
+
+{
+  "branch": ""
+}
+###
+GET http://localhost:8090/gitRepository/1/branch
+Content-Type: application/json
+
+###
+GET http://localhost:8090/gitRepository/1/localBranch
+Content-Type: application/json

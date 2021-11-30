@@ -1,0 +1,9 @@
+{
+  "properties": [
+    {
+      "name": "scaffold.config.git.base-path",
+      "type": "java.lang.String",
+      "description": "创建git仓库的基础路径，将会在基础路径中新建仓库，如果没有配置，则会使用系统的Temp目录."
+    }
+  ]
+}

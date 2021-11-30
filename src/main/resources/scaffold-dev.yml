@@ -1,0 +1,5 @@
+# scaffold外部配置
+#scaffold:
+#  config:
+#    git:
+#      dir-prefix: "TEMP_SCAFFOLD_GIT_REPOSITORY"

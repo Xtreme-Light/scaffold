@@ -1,0 +1,23 @@
+spring:
+  config:
+    import: "classpath:scaffold-${SPRING_PROFILES_ACTIVE:dev}.yml"
+  r2dbc:
+    url: "r2dbc:h2:file:///./test?options=DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE"
+    username: sa
+    password: sa123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+  sql:
+    init:
+      platform: h2
+scaffold:
+  config:
+    git:
+      base-path: C:\\Users\\light\\Desktop\\Temp
+
+logging:
+  level:
+    org:
+      springframework:
+        r2dbc: DEBUG
